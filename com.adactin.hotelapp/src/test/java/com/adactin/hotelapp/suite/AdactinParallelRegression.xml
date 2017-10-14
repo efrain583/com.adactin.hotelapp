@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AdactinRegression" verbose="8" thread-count="5" parallel="classes"> <!-- 5 threads and 5 classes -->
+  <test name="AdactinRegressionBasic">
+    <classes>
+      <class name="com.adactin.hotelapp.tests.AdactinLogin"/>
+      <class name="com.adactin.hotelapp.tests.AdactinSearch"/>
+    </classes>
+  </test> <!-- AdactinRegressionBasic -->
+  <test name="AdactinRegressionAdvance">
+    <classes>
+      <class name="com.adactin.hotelapp.tests.AdactinSelect"/>
+      <class name="com.adactin.hotelapp.tests.AdactinBook"/>
+      <class name="com.adactin.hotelapp.tests.AdactinItinerary"/>
+    </classes>
+  </test> <!-- AdactinRegressionAdvance -->
+</suite> <!-- AdactinRegression -->

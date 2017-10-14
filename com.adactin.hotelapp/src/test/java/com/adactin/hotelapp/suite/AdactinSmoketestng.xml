@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" verbose="2" parallel="false">
+  <test name="BookingCriticalFlow">
+    <classes>
+      <class name="com.adactin.hotelapp.tests.AdactinBook"/>
+    </classes>
+  </test> <!-- BookingCriticalFlow -->
+</suite> <!-- Smoke -->
