@@ -49,8 +49,8 @@ import org.testng.ITestResult;
 
 public class UtilKit {
 
-	private static String projectFolder = "/Users/efrain/Java_practice_workspace/";
-	//private static String projectFolder = "/Users/efrain/git/com.automation/";
+	//private static String projectFolder = "/Users/efrain/Java_practice_workspace/";
+	private static String projectFolder = "/Users/efrain/git/com.adactin.hotelapp/";
 
 	private static String resourcesFolder = "/src/test/resources";
 	private static String projectName = null;
