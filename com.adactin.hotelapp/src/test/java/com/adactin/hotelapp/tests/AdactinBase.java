@@ -13,6 +13,9 @@ import org.testng.annotations.Parameters;
 
 import com.adactin.hotelapp.util.UtilKit;
 
+/*
+ * githup : https://github.com/efrain583/com.adactin.hotelapp.git
+ */
 public class AdactinBase {
 	
 	WebDriver driver;
