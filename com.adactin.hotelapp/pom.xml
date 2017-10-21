@@ -15,6 +15,14 @@
 	<packaging>jar</packaging>
 	<url>http://maven.apache.org</url>
 
+<developers>
+    <developer>
+      <id>efrain</id>
+      <name>Efrain Sanchez</name>
+      <email>efrain583@yahoo.com</email>
+    </developer>
+</developers>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<testngSuiteSourceDir>\src\test\java\com\adactin\hotelapp\suite</testngSuiteSourceDir>
@@ -38,6 +46,8 @@
 							</suiteXmlFiles>
 							<!-- Do not stop testing if a failure is encountered -->
 							<testFailureIgnore>true</testFailureIgnore>
+							<generateSitemap>true</generateSitemap> <!-- To disable this from the command Line use -DGenerateSitemap=false -->
+          					<generateReports>true</generateReports> <!-- To disable this from the command Line use -DGenerateReports=false -->
 						</configuration>
 					</plugin>
 				</plugins>
@@ -47,6 +57,11 @@
 
 	<reporting>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.20.1</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<!-- Maven JXR plugin To Cross Reference the line number of the source 
