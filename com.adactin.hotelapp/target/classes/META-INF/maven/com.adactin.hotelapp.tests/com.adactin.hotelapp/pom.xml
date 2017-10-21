@@ -1,0 +1,136 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- Setsup the Adactin Test -->
+	<!-- For more details: -->
+	<!-- See the Super POM in $M2_HOME\lib\maven-model-builder-3.3.9.jar\org\apache\maven\model\ -->
+	<!-- testSourceDirectory is set to ${project.basedir}/src/test/java -->
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.adactin.hotelapp.tests</groupId>
+	<artifactId>com.adactin.hotelapp</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>adactin</name>
+	<description>hotelapp</description>
+	<packaging>jar</packaging>
+	<url>http://maven.apache.org</url>
+
+<developers>
+    <developer>
+      <id>efrain</id>
+      <name>Efrain Sanchez</name>
+      <email>efrain583@yahoo.com</email>
+    </developer>
+</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<testngSuiteSourceDir>\src\test\java\com\adactin\hotelapp\suite</testngSuiteSourceDir>
+		<adactinRegressionTestsuiteFile>${project.basedir}/${testngSuiteSourceDir}/AdactinRegression_Testng.xml</adactinRegressionTestsuiteFile>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>AdactinTest</id>
+			<build>
+				<plugins>
+					<!-- The surefire plugin is used to run test cases and generate reports -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.20.1</version>
+						<configuration>
+							<!-- specify the Testng Suite XML file here -->
+							<suiteXmlFiles>
+								<suiteXmlFile>${adactinRegressionTestsuiteFile}</suiteXmlFile>
+							</suiteXmlFiles>
+							<!-- Do not stop testing if a failure is encountered -->
+							<testFailureIgnore>true</testFailureIgnore>
+							<generateSitemap>true</generateSitemap> <!-- To disable this from the command Line use -DGenerateSitemap=false -->
+          					<generateReports>true</generateReports> <!-- To disable this from the command Line use -DGenerateReports=false -->
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<!-- Creates a nicely formatted Surefire Test Report in html format -->
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.20.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<!-- Maven JXR plugin To Cross Reference the line number of the source 
+					code that caused a test to the fail. -->
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.5</version>
+				<reportSets>
+					<reportSet>
+						<id>aggregate</id>
+						<reports>
+							<report>aggregate</report>
+							<report>test-aggregate</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jxr-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jxr-plugin</artifactId>
+			<version>2.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.5.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>6.0.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+		<dependency>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit</artifactId>
+			<version>2.26</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.10</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+	</dependencies>
+
+</project>

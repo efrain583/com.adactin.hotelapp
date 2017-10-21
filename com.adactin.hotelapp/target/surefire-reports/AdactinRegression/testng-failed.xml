@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AdactinRegression]">
+  <test name="AdactinRegressionBasic(failed)">
+    <classes>
+      <class name="com.adactin.hotelapp.tests.AdactinLogin">
+        <methods>
+          <include name="startClass"/>
+          <include name="simpleLoginTest" invocation-numbers="1 3"/>
+          <include name="stopClass"/>
+          <include name="stopMethod"/>
+          <include name="startMethod"/>
+        </methods>
+      </class> <!-- com.adactin.hotelapp.tests.AdactinLogin -->
+    </classes>
+  </test> <!-- AdactinRegressionBasic(failed) -->
+</suite> <!-- Failed suite [AdactinRegression] -->
