@@ -59,6 +59,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<!-- Creates a nicely formatted Surefire Test Report in html format -->
 				<artifactId>maven-surefire-report-plugin</artifactId>
 				<version>2.20.1</version>
 			</plugin>
