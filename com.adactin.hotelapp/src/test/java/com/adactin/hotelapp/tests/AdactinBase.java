@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import com.adactin.hotelapp.util.UtilKit;
+import Util.UtilKit;
 
 /*
  * githup : https://github.com/efrain583/com.adactin.hotelapp.git

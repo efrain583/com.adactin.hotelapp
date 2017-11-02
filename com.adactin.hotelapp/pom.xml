@@ -83,6 +83,11 @@
 	</reporting>
 
 	<dependencies>
+		<dependency>
+			<groupId>UtilKit</groupId>
+			<artifactId>AutomationUtilities</artifactId>
+			<version>1.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jxr-plugin -->
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
