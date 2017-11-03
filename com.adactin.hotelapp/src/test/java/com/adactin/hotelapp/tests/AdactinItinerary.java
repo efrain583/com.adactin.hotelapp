@@ -7,7 +7,8 @@ import org.testng.annotations.Test;
 import com.adactin.hotelapp.pages.AdactinItineraryPage;
 import com.adactin.hotelapp.pages.AdactinLoginPage;
 import com.adactin.hotelapp.pages.AdactinSearchPage;
-import com.adactin.hotelapp.util.UtilKit;
+
+import Util.UtilKit;
 
 public class AdactinItinerary extends AdactinBase {
 

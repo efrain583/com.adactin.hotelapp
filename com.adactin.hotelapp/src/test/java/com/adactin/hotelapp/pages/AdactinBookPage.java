@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.adactin.hotelapp.util.OrderNoException;
-import com.adactin.hotelapp.util.UtilKit;
+import Util.UtilKit;
 
 public class AdactinBookPage {
 

@@ -1,7 +1,6 @@
 package com.adactin.hotelapp.tests;
 
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -11,7 +10,8 @@ import com.adactin.hotelapp.pages.AdactinLoginPage;
 import com.adactin.hotelapp.pages.AdactinSearchPage;
 import com.adactin.hotelapp.pages.AdactinSelectPage;
 import com.adactin.hotelapp.util.OrderNoException;
-import com.adactin.hotelapp.util.UtilKit;
+
+import Util.UtilKit;
 
 public class AdactinBook  extends AdactinBase {
 
