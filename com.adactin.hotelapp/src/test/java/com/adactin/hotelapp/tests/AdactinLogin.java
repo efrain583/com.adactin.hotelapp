@@ -116,6 +116,6 @@ public class AdactinLogin extends AdactinBase {
 
 	@DataProvider
 	public Object[][] loginDataProvider() {
-		return UtilKit.getTestData("com.adactin.hotelapp", "adactin", "login");
+		return UtilKit.getTestData(project, application, "login");
 	}
 }

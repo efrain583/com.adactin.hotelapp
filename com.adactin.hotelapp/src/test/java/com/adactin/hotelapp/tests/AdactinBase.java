@@ -20,6 +20,8 @@ public class AdactinBase {
 	
 	WebDriver driver;
 	String myBrowser = new String("firefox");
+	String project = "com.adactin.hotelapp";
+	String application = project;
 	
 	// Optional parameter "browser",  default value is "firefox"
 	// This optional parameter is set in the testng.xml file
@@ -27,7 +29,7 @@ public class AdactinBase {
 	@BeforeClass
 	public void startClass(@Optional("firefox") String browser){
 		myBrowser = browser;
-		driver = UtilKit.initTest("com.adactin.hotelapp", "adactin", myBrowser, getClass().getName());
+		driver = UtilKit.initTest(project, application, myBrowser, getClass().getName());
 		
 	}
 	

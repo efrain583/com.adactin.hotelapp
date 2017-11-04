@@ -87,6 +87,9 @@
 			<groupId>UtilKit</groupId>
 			<artifactId>AutomationUtilities</artifactId>
 			<version>1.0</version>
+			<scope>system</scope>
+<!--  			<systemPath>/c/Users/efrain/.m2/repository/UtilKit/AutomationUtilities/1.0/AutomationUtilities-1.0-tests.jar</systemPath> -->
+			<systemPath>C:\Users\efrain\.m2\repository\UtilKit\AutomationUtilities\1.0\AutomationUtilities-1.0-tests.jar</systemPath>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jxr-plugin -->
 		<dependency>
