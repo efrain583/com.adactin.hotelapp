@@ -107,7 +107,7 @@ public class AdactinSearch extends AdactinBase {
 	@DataProvider
 	public Object[][] searchDataProvider() {
 
-		return UtilKit.getTestData("com.adactin.hotelapp", "adactin", "search");
+		return UtilKit.getTestData(project, application, "search");
 	}
 
 }

@@ -88,7 +88,7 @@
 			<artifactId>AutomationUtilities</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-<!--  			<systemPath>/c/Users/efrain/.m2/repository/UtilKit/AutomationUtilities/1.0/AutomationUtilities-1.0-tests.jar</systemPath> -->
+			<!-- <systemPath>/c/Users/efrain/.m2/repository/UtilKit/AutomationUtilities/1.0/AutomationUtilities-1.0-tests.jar</systemPath> -->
 			<systemPath>C:\Users\efrain\.m2\repository\UtilKit\AutomationUtilities\1.0\AutomationUtilities-1.0-tests.jar</systemPath>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jxr-plugin -->
@@ -103,13 +103,6 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.5.3</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>6.0.6</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
@@ -127,11 +120,26 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>6.0.6</version>
+		</dependency>
+		
+			<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.16</version>
+		</dependency>
+
+		<!-- This dependency is used by Apache POI -->
+		<!-- https://mvnrepository.com/artifact/xml-apis/xml-apis -->
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
 		</dependency>
 
 		<dependency>

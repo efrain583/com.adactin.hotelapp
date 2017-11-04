@@ -133,12 +133,12 @@ public class AdactinItinerary extends AdactinBase {
 
 	@DataProvider
 	public Object[][] cancelOrderDismissDataProvider() {
-		return UtilKit.getTestData("com.adactin.hotelapp", "adactin", "DismissCancel");
+		return UtilKit.getTestData(project, application, "DismissCancel");
 	}
 
 	@DataProvider
 	public Object[][] cancelOrderAcceptDataProvider() {
-		return UtilKit.getTestData("com.adactin.hotelapp", "adactin", "AcceptCancel");
+		return UtilKit.getTestData(project, application, "AcceptCancel");
 	}
 
 	@DataProvider

@@ -188,7 +188,7 @@ public class AdactinBook  extends AdactinBase {
 
 	@DataProvider
 	public Object[][] bookDataProvider() {
-		Object[][] bookData = UtilKit.getTestData("com.adactin.hotelapp", "Adactin", "Book");
+		Object[][] bookData = UtilKit.getTestData(project, application, "Book");
 		return bookData;
 
 	}
