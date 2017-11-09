@@ -35,7 +35,7 @@ public class AdactinBase {
 	
 	@BeforeMethod
 	public void startMethod(Method method){
-		UtilKit.initMethod(method.getName());
+		UtilKit.initMethod(method);
 	}
 
 	@AfterMethod
