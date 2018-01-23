@@ -71,7 +71,7 @@ public class AdactinSearchPage {
 			Thread.sleep(3000); // necessary Delay
 			myRobot.keyPress(KeyEvent.VK_ENTER); // Shift-Enter
 			Thread.sleep(3000); // necessary Delay
-			myRobot.mouseMove(130, 85); // This should be the coordinates for
+			myRobot.mouseMove(70, 50); // This should be the coordinates for
 											// the "EXTRACT" Button
 											// in the Windows Zip File Manager
 											// App
@@ -109,11 +109,23 @@ public class AdactinSearchPage {
 														// array to the
 														// clipboard one chat at
 														// the time
-			myRobot.delay(3000);
-//			myRobot.keyPress(KeyEvent.VK_TAB);
-//			myRobot.keyPress(KeyEvent.VK_TAB);
-//			myRobot.delay(500);
+			myRobot.delay(1000);
+			//myRobot.keyPress(KeyEvent.VK_TAB);
+			//myRobot.keyPress(KeyEvent.VK_TAB); //myRobot.delay(500);
+			
 			myRobot.keyPress(KeyEvent.VK_ENTER);
+			
+			myRobot.delay(1000);
+			// Exit the download window
+			myRobot.mouseMove(20, 30); 
+			myRobot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+			myRobot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+			myRobot.delay(500);
+			myRobot.keyPress(KeyEvent.VK_ALT);
+			myRobot.keyPress(KeyEvent.VK_F4);
+			myRobot.keyRelease(KeyEvent.VK_ALT);
+
+			myRobot.delay(50);
 
 		} catch (AWTException e) {
 			UtilKit.exceptionLogger(e);
