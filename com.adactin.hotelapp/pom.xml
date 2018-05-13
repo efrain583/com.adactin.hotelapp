@@ -27,6 +27,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<testngSuiteSourceDir>\src\test\java\com\adactin\hotelapp\suite</testngSuiteSourceDir>
 		<adactinRegressionTestsuiteFile>${project.basedir}/${testngSuiteSourceDir}/AdactinRegression_Testng.xml</adactinRegressionTestsuiteFile>
+		<dependency.locations.enabled>false</dependency.locations.enabled>
 	</properties>
 
 	<profiles>
