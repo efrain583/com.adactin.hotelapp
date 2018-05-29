@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<!-- Setsup the Adactin Test -->
+	<!-- Sets up the Adactin Test -->
 	<!-- For more details: -->
 	<!-- See the Super POM in $M2_HOME\lib\maven-model-builder-3.3.9.jar\org\apache\maven\model\ -->
 	<!-- testSourceDirectory is set to ${project.basedir}/src/test/java -->

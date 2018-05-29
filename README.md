@@ -1,4 +1,4 @@
-in.automationtest
+com.adactin.hotelapp
 
 automation test Demo project
 
